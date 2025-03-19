@@ -7,6 +7,7 @@ body{
     align-items: center;
     margin: 0;
 }
+/* header from main page */
 header{
     display: flex;
     color: black;
@@ -31,13 +32,16 @@ header{
 }
 .top-part ul{
     list-style-type: none;
+    margin-left: -30px;
 }
 .top-part ul li{
     display: inline-block;
     margin-right: 20px;
 }
 .logo-image{
-    width: 60px;
+    width: 122px;
+    margin-left: -20px;
+    
 }
 .user{
     margin-left: auto;
@@ -49,6 +53,8 @@ header{
     background-color: #F2D98D;
     border-radius: 45px;
 }
+
+/* main from main page */
 main{
     display: flex;
     align-items: center;
@@ -58,3 +64,58 @@ main{
     padding: 30px;
 
 }
+/* main from login page */
+.main-login{
+    display: flex;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+
+}
+.login-box{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2D98D;
+    width: 300px;
+    height: 400px;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.input-login{
+    display: flex;
+    align-items: center;
+}
+.input-login img{
+    width: 40px;
+    background-color: #3B7302;
+    padding: 5px;
+}
+.input-login input{
+    height: 48px;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.login-box a{
+    color: black;
+}
+.logo-image-login{
+    width: 80px;
+}
+.buttons-login{
+    display: flex;
+    gap: 20px;
+}
+.buttons-login button{
+    padding: 10px;
+    width: 70px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
