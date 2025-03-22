@@ -43,8 +43,13 @@ header{
     margin-left: -20px;
     
 }
-.user{
+#lupa{
     margin-left: auto;
+    margin-right: 25px;
+}
+.lupa-image{
+    width: 25px;
+    padding: 3px;
 }
 .user-image{
     width: 35px;
@@ -96,6 +101,7 @@ main{
     padding: 5px;
 }
 .input-login input{
+    padding-left: 10px;
     height: 48px;
     border: none;
     border-top-right-radius: 8px;
@@ -105,17 +111,29 @@ main{
     color: black;
 }
 .logo-image-login{
-    width: 80px;
+    width: 210px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 .buttons-login{
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+}
+#myLogin{
+    background-color: black;
+    color: whitesmoke;
 }
 .buttons-login button{
-    padding: 10px;
-    width: 70px;
+    font-family: Verdana;
+    padding: 11px;
+    width: 80px;
     font-size: 15px;
     border-radius: 10px;
     border: none;
+}
+.buttons-login button:hover{
+    background-color: rgb(232, 232, 232);
 }
 
