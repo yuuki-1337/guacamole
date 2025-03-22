@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guacamole</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -19,10 +20,33 @@
                 <li><a href="">Certificados</a></li>
             </ul>
             <div id="lupa">
-                <a href=""><img src="../img/lupa.png" alt="" class="lupa-image"></a>
+                <i class="fa-solid fa-magnifying-glass">
+                </i>
             </div>
             <div id="user">
-                <a href=""><img src="../img/user-image.png" alt="user" class="user-image"><a href=""></a>
+                <a href=""><img src="../img/user-image.png" alt="user" id="user-image"></a>
+            </div>
+        </nav>
+        <nav class="menu-mobile">
+            <button id="menu-toggle">
+                <img src="../img/sideBar-image.png" alt="">
+            </button>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
+            </div>
+            <div id="user">
+                <a href="../pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"><a href=""></a>
+            </div>
+        </nav>
+        <nav class="sideBar">
+            <div class="top-sideBar">
+                <div id="lupa">
+                    <button id="menu-toggle">
+                        <img src="../img/sideBar-image.png" alt="">
+                    </button>
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                </div>
             </div>
         </nav>
     </header>
@@ -32,17 +56,22 @@
                 <img src="../img/guacamole-logo.png" alt="" class="logo-image-login">
                 <div class="input-login">
                     <img src="../img/user-image.png" alt="user-image">
-                    <input type="text" placeholder="Digite seu e-mail" id="myEmail">
+                    <input type="text" placeholder="Seu e-mail ou nome de usuario" id="myEmail">
                 </div>
                 <div class="input-login">
                     <img src="../img/locker-image.png" alt="">
                     <input type="text" placeholder="Sua senha" id="myPassword">
+                        <div id="hidePassword">
+                            <button>
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
                 </div>
+                <a href="">Esqueceu sua senha?</a>
                 <div class="buttons-login">
                     <button>Sign up</button>
                     <button id="myLogin">Login</button>
                 </div>
-                <a href="">Esqueceu sua senha?</a>
             </div>
         </section>
     </main>

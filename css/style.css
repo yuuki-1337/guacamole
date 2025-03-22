@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
     font-family: Arial, sans-serif;
     color: black;
@@ -18,10 +20,12 @@ header{
     border-bottom: 1px solid rgb(172, 172, 172);
     position: fixed;
     z-index: 1;
+    font-family: "Poppins", sans-serif;
 }
 .top-part{
     display: flex;
     align-items: center;
+    justify-self: center;
     color: black;
     width: 100%;
     margin: 15px;
@@ -43,20 +47,41 @@ header{
     margin-left: -20px;
     
 }
+.menu-mobile{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 100%;    
+    margin: 15px;
+}
 #lupa{
     margin-left: auto;
-    margin-right: 25px;
+    margin-right: 15px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    margin-bottom: 7px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
 }
-.lupa-image{
-    width: 25px;
-    padding: 3px;
+#lupa:hover{
+    background-color: #F2D98D;
 }
-.user-image{
-    width: 35px;
+#user-image{
+    object-fit: cover;
+    width: 27px;
     margin-left: auto;
     padding: 3px;
     background-color: #F2D98D;
     border-radius: 45px;
+}
+#user-image:hover{
+    background-color: #d2bc79;
+}
+.sideBar{
+    display: none;
 }
 
 /* main from main page */
@@ -85,8 +110,8 @@ main{
     align-items: center;
     justify-content: center;
     background-color: #F2D98D;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 420px;
     gap: 20px;
     border-radius: 10px;
     border: 1px solid black;
@@ -94,25 +119,39 @@ main{
 .input-login{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 .input-login img{
+    object-fit: cover;
     width: 40px;
     background-color: #3B7302;
     padding: 5px;
+    border-radius: 8px 0px 0px 8px;
 }
 .input-login input{
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
     padding-left: 10px;
-    height: 48px;
+    width: 220px;
+    height: 47px;
+    border: 0.1px solid rgb(183, 183, 183);
+    border-radius: 0px 8px 8px 0px;
+}
+#hidePassword{
+    position: absolute;
+    margin-left: 254px;
+}
+#hidePassword button{
     border: none;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    background-color: whitesmoke;
+
 }
 .login-box a{
     color: black;
 }
 .logo-image-login{
     width: 210px;
-    margin-top: -20px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 .buttons-login{
@@ -126,6 +165,7 @@ main{
     color: whitesmoke;
 }
 .buttons-login button{
+    cursor: pointer;
     font-family: Verdana;
     padding: 11px;
     width: 80px;
@@ -136,4 +176,45 @@ main{
 .buttons-login button:hover{
     background-color: rgb(232, 232, 232);
 }
+@media (max-width: 768px){
+    .top-part{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+    #user{
+        margin-left: auto;
+    }
+    #user-image{
+        width: 30px;
+        padding: 8px;
+    }
+    .logo{
+        /* Because of -20px from original menu */
+        margin-left: 20px; 
+    }
+    #menu-toggle{
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: auto;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        background-color: #FDFFE9;
+    }
+    #menu-toggle:hover{
+        background-color: #F2D98D;
 
+    }
+    #menu-toggle img{
+        width: 30px;
+    }
+    .sideBar{
+        display: none;
+    }
+}

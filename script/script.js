@@ -8,4 +8,7 @@ document.getElementById("myLogin").onclick = function(){
     userPassword = document.getElementById("myPassword").value;
     console.log("Email: ",userEmail);
     console.log("Password: ",userPassword);
+    if(userEmail){
+        console.log("Erro")
+    }
 }
