@@ -88,11 +88,84 @@ header{
 main{
     display: flex;
     align-items: center;
-    margin: 10px;
-    margin-top: 50px;
+    margin-top: 70px;
     flex-direction: column;
-    padding: 30px;
+    width: 100%;
 
+}
+.home-prices{
+    background-color: #3B7302;
+    height: calc(100vh - 90px);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Poppins", "sans-serif";
+    padding-top: 20px;
+}
+.home-title{
+    display: flex;
+    text-align: justify;
+    max-width: 700px;
+    margin: 0px 20%;
+}
+.home-title h1{
+    font-size: 22px;
+    color: white;
+}
+.guaca-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.guaca-btn button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    font-family: "Poppins";
+    cursor: pointer;
+}
+#guacaBasic:hover{
+    background-color: rgb(216, 216, 216);
+}
+#guacaPro:hover{
+    transition: 0.3s ease-in;
+    background-color: #3B7302;
+    color: white;
+}
+.guaca-banner{
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    max-width: 300px;
+    max-height: 350px;
+    border-radius: 20px;
+}
+.banner-text{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.banner-text button{
+    border: none;
+    background: none;
+    background-color: black;
+    color: whitesmoke;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Poppins";
+    cursor: pointer;
 }
 /* main from login page */
 .main-login{
@@ -216,5 +289,11 @@ main{
     }
     .sideBar{
         display: none;
+    }
+    .home-prices{
+        height: 100vh;
+    }
+    .home-title h1{
+        font-size: 22px;
     }
 }
