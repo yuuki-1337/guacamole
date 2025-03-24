@@ -10,6 +10,29 @@
 </head>
 <body>
     <header>
+        <nav class="sideBar">
+            <div class="top-sideBar">
+                <button id="menu-toggle">
+                    <img src="../img/sideBar-image.png" alt="">
+                </button>
+                <div id="lupa">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                </div>
+            </div>
+            <div class="sideContent">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Certificados</a></li>
+                    <li><a href="">Configurações</a></li>
+                    <li><a href="">Conta</a></li>
+                </ul>
+            </div>
+            <div class="logout">
+                <a  href="" id="logout active">Sair da conta</a>
+            </div>
+        </nav>
         <nav class="top-part">
             <div>
                 <a href=""><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
@@ -38,17 +61,6 @@
                 <a href="../pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"><a href=""></a>
             </div>
         </nav>
-        <nav class="sideBar">
-            <div class="top-sideBar">
-                <div id="lupa">
-                    <button id="menu-toggle">
-                        <img src="../img/sideBar-image.png" alt="">
-                    </button>
-                    <i class="fa-solid fa-magnifying-glass">
-                    </i>
-                </div>
-            </div>
-        </nav>
     </header>
     <main class="main-login">
         <section>
@@ -56,21 +68,20 @@
                 <img src="../img/guacamole-logo.png" alt="" class="logo-image-login">
                 <div class="input-login">
                     <img src="../img/user-image.png" alt="user-image">
-                    <input type="text" placeholder="Seu e-mail ou nome de usuario" id="myEmail">
+                    <input type="email" placeholder="Seu e-mail ou nome de usuario" id="myEmail" type="email">
                 </div>
                 <div class="input-login">
                     <img src="../img/locker-image.png" alt="">
-                    <input type="text" placeholder="Sua senha" id="myPassword">
-                        <div id="hidePassword">
-                            <button>
-                                <i class="fa-solid fa-eye"></i>
-                            </button>
-                        </div>
+                    <input type="password" placeholder="Sua senha" id="myPassword">
+                    <div id="hidePassword">
+                        <button id="showPassword" onclick="mudarSenha()"><i class="fa-solid fa-eye" id="open"></i><i class="fa-solid fa-eye-slash" id="close"></i>
+                        </button>
+                    </div>
                 </div>
                 <a href="">Esqueceu sua senha?</a>
                 <div class="buttons-login">
                     <button>Sign up</button>
-                    <button id="myLogin">Login</button>
+                    <button id="myLogin" onclick="loginAccount()">Login</button>
                 </div>
             </div>
         </section>
@@ -79,7 +90,6 @@
 
     </footer>
     <script src="../script/script.js">
-
     </script>
 </body>
 </html>
