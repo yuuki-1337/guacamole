@@ -10,12 +10,35 @@
 </head>
 <body>
     <header>
+        <nav class="sideBar" id="menuLateral">
+            <div class="top-sideBar">
+                <button id="menu-toggle" onclick="abrirMenu()">
+                    <img src="../img/sideBar-image.png" alt="">
+                </button>
+                <div id="lupa">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                </div>
+            </div>
+            <div class="sideContent">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/cursos.html">Cursos</a></li>
+                    <li><a href="./pages/certificados.html">Certificados</a></li>
+                    <li><a href="./pages/configuracoes.html">Configurações</a></li>
+                    <li><a href="./pages/login.html">Conta</a></li>
+                </ul>
+            </div>
+            <div class="logout">
+                <a  href="" id="logout active">Sair da conta</a>
+            </div>
+        </nav>
         <nav class="top-part">
             <div>
-                <a href=""><img src="./img/logo-image.png" alt="logo" class="logo-image"></a>
+                <a href=""><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
             </div>
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="">Cursos</a></li>
                 <li><a href="">Certificados</a></li>
             </ul>
@@ -24,15 +47,15 @@
                 </i>
             </div>
             <div id="user">
-                <a href="./pages/login.html"><img src="./img/user-image.png" alt="user" id="user-image"><a href=""></a>
+                <a href="./pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"></a>
             </div>
         </nav>
-        <nav class="menu-mobile">
-            <button id="menu-toggle">
+        <nav class="menu-mobile" id="menuMobile">
+            <button id="menu-toggle" onclick="abrirMenu()">
                 <img src="../img/sideBar-image.png" alt="">
             </button>
             <div class="logo">
-                <a href="./index.html"><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
+                <a href="../index.html"><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
             </div>
             <div id="user">
                 <a href="../pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"><a href=""></a>
@@ -43,9 +66,10 @@
         <section class="home-prices">
             <div class="home-title">
                 <h1>NÃO PERCA A MELHOR OPORTUNIDADE DO ANO PARA ESTUDAR COM QUEM REALMENTE FAZ ACONTECER!</h1>
-                <p></p>
+                <p>Aqui, você encontra cursos em diversas áreas, com certificação ao final para valorizar seu currículo. Aprimore suas habilidades e esteja preparado para o mercado de trabalho.</p>
             </div>
             <div class="guaca-banner">
+                <div id="card">Mais escolhido</div>
                 <div class="guaca-btn">
                     <button id="guacaBasic" onclick="guacaBasic()">GuacaBasic</button>
                     <button id="guacaPro" onclick="guacaPro()">GuacaPro</button>
@@ -55,16 +79,19 @@
                     <div class="promocao">
                         <i class="fa-solid fa-book" style="color: #316101" id="basic"></i>
                         <i class="fa-solid fa-microchip" style="color: #316101;" id="pro"></i>
-                        <h3 id="textPrice">Promocao Basic</h3>
+                        <h3 id="textPrice">Promoção Basic</h3>
                     </div>
                     <p>Venha para a Guacamole Academy estudar com os melhores</p>
-                    <p id="previousPrice">De R$579,88 por 12x sem juros de:</p>
+                    <p id="previousPrice">De <span style="text-decoration: line-through;">R$579,88</span> por 12x sem juros de:</p>
                     <h1 id="coursePrice">R$ 39,99</h1>
                 </div>
                 <div class="banner-btn">
                     <button id="sign"onclick="signCourse()">Assinar</button>
                 </div>
             </div>
+        </section>
+        <section>
+
         </section>
     </main>
     <footer>

@@ -17,25 +17,40 @@ function loginAccount(){
         }
     )
 }
+function abrirMenu(){
+    document.getElementById('menuLateral').classList.toggle('active');
+}
 let signGuacaPro = false;
 let signGuacaBasic = true;
 
 function guacaPro(){
-    document.getElementById("textPrice").innerText = "Promocao Pro";
+    let card = document.getElementById('card');
+    let button = document.getElementById('guacaPro');
+    document.getElementById("textPrice").innerText = "Promoção Pro";
     document.getElementById('coursePrice').innerText = "R$ 49,99";
     document.getElementById('pro').style.display = "flex";
     document.getElementById('basic').style.display = "none";
-    document.getElementById('previousPrice').innerText = "De R$ 699,88 por 12x sem juros de:";
+    document.getElementById('previousPrice').innerHTML = "De R$699,88 por 12x sem juros de:";
+    button.style.background = "#3B7302";
+    button.style.color = "whitesmoke";
+    document.getElementById('guacaBasic').style = "none";
+    card.innerText = "Mais beneficios";
     signGuacaPro = true;
     signGuacaBasic = false;
 }
 
 function guacaBasic(){
-    document.getElementById("textPrice").innerText = "Promocao Basic";
+    let card = document.getElementById('card');
+    let button = document.getElementById('guacaBasic');
+    document.getElementById("textPrice").innerText = "Promoção Basic";
     document.getElementById('coursePrice').innerText = "R$ 39,99";
     document.getElementById('pro').style.display = "none";
     document.getElementById('basic').style.display = "flex";
-    document.getElementById('previousPrice').innerText = "De R$ 579,88 por 12x sem juros de:";
+    document.getElementById('previousPrice').innerHTML = "De R$579,88 por 12x sem juros de:";
+    document.getElementById('guacaBasic').style.background = "#3B7302";
+    button.style.color = "whitesmoke"
+    document.getElementById('guacaPro').style = "none";
+    card.innerText = "Mais escolhido";
     signGuacaBasic = true;
     signGuacaPro = false;
 }

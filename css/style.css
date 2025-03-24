@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0;
+    overflow-x: hidden;
 }
 /* header from main page */
 header{
@@ -82,6 +83,7 @@ header{
 }
 .sideBar{
     display: none;
+    pointer-events: none;
 }
 
 /* main from main page */
@@ -104,7 +106,7 @@ main{
 .home-title{
     text-align: left;
     max-width: 500px;
-    height: 50px;
+    max-height: 50px;
     margin-top: -25px;
     padding: 20px;
 }
@@ -112,11 +114,26 @@ main{
     font-size: 29px;
     color: white;
 }
+.home-title p{
+    color: #fff;
+    font-size: 14px;
+}
+#card{
+    position: absolute;
+    background-color: #87aa64;
+    padding: 5px;
+    border-radius: 0px 0px 8px 8px;
+    font-size: 10px;
+    color: white;
+    margin-top: -32px;
+    transform: translateX(80px);
+}
 .guaca-btn{
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 45px;
+    background: aliceblue;
     padding: 5px;
     border: 1px solid rgb(216, 216, 216);
     width: 80%;
@@ -124,11 +141,12 @@ main{
     gap: 5px;
 }
 .guaca-btn button{
+    background: none;
     font-size: 15px;
     padding: 10px;
     border-radius: 45px;
     border: none;
-    width: 140px;
+    width: 130px;
     font-family: "Poppins", "sans-serif";
     cursor: pointer;
 }
@@ -141,11 +159,12 @@ main{
     color: white;
 }
 .guaca-banner{
-    margin-top: 20px;
-    background-color: white;
+    margin-top: -10px;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-top: 30px;
     align-items: center;
     max-width: 300px;
     height: 400px;
@@ -172,10 +191,13 @@ main{
     font-size: 50px;
     margin-top: -10px;
     height: 10px;
-    
 }
+
 #previousPrice{
     color: gray;
+}
+#previousPrice span{
+    text-decoration: line-through;
 }
 .banner-text h3{
     color: #316101;
@@ -208,6 +230,10 @@ main{
     margin-bottom: 10px;
     font-family: "Poppins";
     cursor: pointer;
+}
+.banner-btn button:hover{
+    opacity: 0.7;
+    transition: 0.3s;
 }
 /* main from login page */
 .main-login{
@@ -298,7 +324,7 @@ main{
 }
 .buttons-login button{
     cursor: pointer;
-    font-family: Verdana;
+    font-family: Poppins;
     padding: 11px;
     width: 80px;
     font-size: 15px;
@@ -352,12 +378,14 @@ main{
         align-items: center;
         background-color: #305e02;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         margin-top: -10px;
         width: 50%;
         border-radius: 0px 20px 20px 0px;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in;
+        z-index: 1;
+        pointer-events: auto;
     }
     .sideBar.active{
         transform: translateX(0);
@@ -368,6 +396,10 @@ main{
         height: 55px;
         padding: 10px;
         width: 100%;
+        padding-top: 15px;
+    }
+    .top-sideBar img{
+        margin-left: 30px;
     }
     #lupa{
         margin-left: auto;
@@ -402,7 +434,7 @@ main{
         color: white;
     }
     .sideContent ul a:hover{
-        background-color: #316101;
+        background-color: #264b01;
     }
     .logout{
         display: flex;
@@ -428,22 +460,25 @@ main{
         border-radius: 8px;
     }
     .logout a:hover{
-        background-color: #316101;
-    }
-    
-    .home-prices{
-        height: 100vh;
+        background-color: #264b01;
     }
     .home-title h1{
         font-size: 22px;
     }
     /* main from home page */
     .home-prices{
+        height: calc(1000px - 55px);
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
+        gap: 0;
+        margin: 0;
     }
     .home-title{
-        margin-top: -50px;
-        margin-bottom: 50px;
+        align-items: center;
+        margin-top: -100px;
+    }
+    .guaca-banner{
+        margin-top: -100px;
     }
 }

@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <nav class="sideBar">
+        <nav class="sideBar" id="menuLateral">
             <div class="top-sideBar">
-                <button id="menu-toggle">
+                <button id="menu-toggle" onclick="abrirMenu()">
                     <img src="../img/sideBar-image.png" alt="">
                 </button>
                 <div id="lupa">
@@ -22,11 +22,11 @@
             </div>
             <div class="sideContent">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Cursos</a></li>
-                    <li><a href="">Certificados</a></li>
-                    <li><a href="">Configurações</a></li>
-                    <li><a href="">Conta</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="./certificados.html">Certificados</a></li>
+                    <li><a href="./configuracoes.html">Configurações</a></li>
+                    <li><a href="./login.html">Conta</a></li>
                 </ul>
             </div>
             <div class="logout">
@@ -50,8 +50,8 @@
                 <a href=""><img src="../img/user-image.png" alt="user" id="user-image"></a>
             </div>
         </nav>
-        <nav class="menu-mobile">
-            <button id="menu-toggle">
+        <nav class="menu-mobile" id="menuMobile">
+            <button id="menu-toggle" onclick="abrirMenu()">
                 <img src="../img/sideBar-image.png" alt="">
             </button>
             <div class="logo">
