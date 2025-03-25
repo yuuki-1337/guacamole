@@ -236,11 +236,9 @@ main{
     transition: 0.3s;
 }
 .students{
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 .image-students{
     width: 250px;
@@ -249,7 +247,6 @@ main{
 .students-container{
     display: flex;
     justify-content: space-around;
-    gap: 40px;
 }
 .students.active{
     transform: translateX();
@@ -265,8 +262,8 @@ main{
 }
 footer{
     display: flex;
+    width: 100vw;
     flex-direction: column;
-    width: 100%;
     background-color: #693100;
 }
 .footerContent ul{
@@ -287,7 +284,7 @@ footer{
 .footerSection{
     font-family: Poppins;
     margin: 30px;
-    gap: 90px;
+    gap: 10%;
     display: flex;
     color: whitesmoke;
 }
@@ -564,5 +561,6 @@ footer{
     }
     .guaca-banner{
         margin-top: -100px;
+        margin-right: 0;
     }
 }
