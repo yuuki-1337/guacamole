@@ -426,6 +426,7 @@ footer{
     border-radius: 10px;
     border: none;
 }
+
 .buttons-login button:hover{
     background-color: rgb(232, 232, 232);
 }
