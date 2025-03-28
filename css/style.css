@@ -307,11 +307,11 @@ footer{
     color: whitesmoke;
 }
 .guacamoleFinish{
-    width: 100%;
     display: flex;
     background-color: #3B7302;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .footer-logo{
     margin-top: -20px;
@@ -323,13 +323,13 @@ footer{
 }
 .footer-logo img{
     object-fit: cover;
-    width: 140px;
+    width: 150px;
     height: 50px;
 }
 .footer-informations{
     color: whitesmoke;
     font-family:'Times New Roman', Times, serif;
-    font-size: 13px;
+    font-size: 10px;
     height: 68px;
     width: 75%;
     display: flex;
@@ -514,7 +514,7 @@ footer{
         margin-top: -10px;
         width: 60%;
         border-radius: 0px 20px 20px 0px;
-        transform: translateX(-100%);
+        transform: translateX(-120%);
         transition: transform 0.3s ease-in;
         z-index: 1;
         pointer-events: auto;
@@ -593,6 +593,9 @@ footer{
     }
     .logout a:hover{
         background-color: #264b01;
+    }
+    .home-title{
+        padding: 20px;
     }
     .home-title h1{
         font-size: 25px;
