@@ -239,7 +239,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 30px 0px 30px 0px;
-    width: 100%;
+    width: 90%;
 }
 .image-students{
     width: 250px;
@@ -279,9 +279,9 @@ main{
 }
 footer{
     display: flex;
-    width: 100%;
     flex-direction: column;
     background-color: #693100;
+    width: 100%;
 }
 .footerContent ul{
     list-style: none;
@@ -311,7 +311,6 @@ footer{
     background-color: #3B7302;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 .footer-logo{
     margin-top: -20px;
@@ -330,7 +329,7 @@ footer{
     color: whitesmoke;
     font-family:'Times New Roman', Times, serif;
     font-size: 10px;
-    height: 68px;
+    height: 70px;
     width: 75%;
     display: flex;
     align-items: center;
@@ -606,8 +605,6 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap: 0;
-        margin: 0;
         padding-top: 0px;
     }
     .home-title{
