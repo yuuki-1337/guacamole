@@ -271,6 +271,11 @@ main{
 .students-title h2{
     font-size: 32px;
     text-align: center;
+    color: #3B7302;
+    letter-spacing: 3px;
+}
+.students-title h3{
+    font-size: 25px;
 }
 .students-container h5{
     font-size: 20px;
@@ -460,6 +465,23 @@ footer{
 
 .buttons-login button:hover{
     background-color: rgb(232, 232, 232);
+}
+/* main cursos */
+.main-login{
+    margin: 0;
+    padding: 0;
+}
+.welcome-courses{
+    height: 100vh;
+    background: url(../img/background-cursos.png) no-repeat
+     center center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 @media(max-width: 915px){
     #textPrice{

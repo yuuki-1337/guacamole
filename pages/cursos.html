@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="sideBar" id="menuLateral">
+            <div class="top-sideBar">
+                <button id="menu-toggle" onclick="abrirMenu()">
+                    <img src="../img/sideBar-image.png" alt="">
+                </button>
+                <div id="lupa">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                </div>
+            </div>
+            <div class="sideContent">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/cursos.html">Cursos</a></li>
+                    <li><a href="../pages/certificados.html">Certificados</a></li>
+                    <li><a href="../pages/configuracoes.html">Configurações</a></li>
+                    <li><a href="../pages/login.html">Conta</a></li>
+                </ul>
+            </div>
+            <div class="logout">
+                <a  href="#" id="logout active">Sair da conta</a>
+            </div>
+        </nav>
+        <nav class="top-part">
+            <div>
+                <a href=""><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
+            </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/cursos.html">Cursos</a></li>
+                <li><a href="../pages/certificados.html">Certificados</a></li>
+            </ul>
+            <div id="lupa">
+                <i class="fa-solid fa-magnifying-glass">
+                </i>
+            </div>
+            <div id="user">
+                <a href="../pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"></a>
+            </div>
+        </nav>
+        <nav class="menu-mobile" id="menuMobile">
+            <button id="menu-toggle" onclick="abrirMenu()">
+                <img src="../img/sideBar-image.png" alt="">
+            </button>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
+            </div>
+            <div id="user">
+                <a href="../pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"><a href=""></a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-cursos">
+        <section class="welcome-courses">
+            <h1>Seja bem vindo</h1>
+            <p>Na Guacamole Academy possuimos diversos cursos para voce aproveitar</p>
+        </section>
+    </main>
+    <footer>
+        <section class="footerSection">
+            <div class="footerContent">
+                <h6>Sobre</h6>
+                <ul>
+                    <li><a href="">Quem somos</a></li>
+                    <li><a href="">Carreiras</a></li>
+                    <li><a href="">Fale conosco</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h6>Redes</h6>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i>@guacamole_academy</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>@Guacamole_academy</a></li>
+                    <li><a href=""><i class="fa-solid fa-x"></i>@Guacamole_academy</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="guacamoleFinish">
+            <div class="footer-logo">
+                <img src="../img/guacamole-logo.png" alt="rapaz">
+            </div>
+            <div class="footer-informations">
+                <a href="">©2025 Guacamole, Inc.</a>
+                <a href="">Configurações de Cookie</a>
+                <a href="">Termos</a>
+                <button id="translater"><i class="fa-solid fa-globe"></i>Português</button>
+            </div>
+        </section>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+</html>
