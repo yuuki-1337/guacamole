@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
     font-family: Arial, sans-serif;
@@ -301,6 +302,9 @@ footer{
     text-decoration: none;
     color: whitesmoke;
 }
+.footerContent a i{
+    margin-right: 5px;
+}
 .footerContent h6{
     font-size: 20px;
 }
@@ -314,7 +318,7 @@ footer{
 }
 .guacamoleFinish{
     display: flex;
-    background-color: #3B7302;
+    background: url(../img/background-footer.png);
     align-items: center;
     justify-content: center;
 }
@@ -473,15 +477,68 @@ footer{
 }
 .welcome-courses{
     height: 100vh;
-    background: url(../img/background-cursos.png) no-repeat
-     center center;
+    background-color: #FDFFE9;
     background-size: cover;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+}
+.welcome-courses h1{
+    font-size: 35px;
+    color: #3B7302;
+}
+.welcome-courses p{
+    margin-bottom: 100px;
+}
+.welcome-courses button{
+    border: none;
+    padding: 15px;
+    width: 150px;
     color: white;
+    font-family: Poppins;
+    background-color: #3B7302;
+    border-radius: 30px;
+    cursor: pointer;
+    animation: shake 2s;
+}
+.welcome-courses button:hover{
+    opacity: 0.7;
+    animation: float 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes shake{
+    0%{
+        scale: 0.5;
+    }
+    40%{
+        scale: 1.5;
+    }
+    50%{
+        scale: 1;
+    }
+    90%{
+        transform: rotate(15deg);
+    }
+    95%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(8px);
+    }
 }
 @media(max-width: 915px){
     #textPrice{
