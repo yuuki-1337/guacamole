@@ -323,8 +323,8 @@ footer{
     justify-content: center;
 }
 .footer-logo{
-    margin-top: -20px;
-    width: 25%;
+    margin-top: -5px;
+    max-width: 140px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -332,8 +332,7 @@ footer{
 }
 .footer-logo img{
     object-fit: cover;
-    width: 150px;
-    height: 50px;
+    width: 140px;
 }
 .footer-informations{
     color: whitesmoke;
@@ -486,7 +485,7 @@ footer{
     justify-content: center;
     color: black;
     font-family: "Montserrat", sans-serif;
-    padding: 20px;
+    border-bottom: 1px solid #dfe1e5;
 }
 .welcome-courses h1{
     font-size: 35px;
@@ -494,6 +493,8 @@ footer{
 }
 .welcome-courses p{
     margin-bottom: 100px;
+    text-align: center;
+    padding: 20px;
 }
 .welcome-courses button{
     border: none;
@@ -511,6 +512,147 @@ footer{
     animation: float 1s infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+}
+.courses-container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    width: 100%;
+}
+.courses-container h1{
+    text-align: center;
+    padding: 20px;
+}
+.courses-box{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    align-items: center;
+}
+.courses-button{
+    font-family: "Poppins" sans-serif;
+    padding: 30px;
+}
+.courses-button button{
+    background-color: #F2D98D;
+    border: none;
+    width: 250px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.courses-button button img{
+    object-fit: cover;
+    width: 50%;
+
+}
+.students-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    background-color: #3B7302;
+}
+.students-container-cursos{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e7e9d7;
+    width: 90%;
+    gap: 40px;
+    padding: 20px;
+    position: relative;
+    font-family: "Montserrat";
+    overflow: hidden;
+    
+}
+.students.active{
+    transform: translateX();
+}
+.students-title-cursos{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    font-family: "Poppins" ;
+    font-style: normal;
+}
+.students-title-cursos h2{
+    font-size: 32px;
+    text-align: center;
+    color: #FDFFE9;
+    letter-spacing: 3px;
+}
+#studentsScrollbar{
+    animation-name: slide;
+    animation-delay: 2s;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+.recommended{
+    font-family: poppins;
+    padding: 20px;
+    max-width: 900px;
+
+}
+.recommended-banner{
+    font-size: 12px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+}
+.img-course{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.img-course img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.content-course{
+    width: 35%;
+    margin: 20px;
+}
+.recommended-banner ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.recommended-banner ul li{
+    margin-left: 10px;
+}
+
+@keyframes slide{
+    0%{
+    }
+    25%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translateX(-400px);
+    }
+    75%{
+        transform: translateX(-600px);
+    }
+    90%{
+        transform: translateX(-710px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 @keyframes shake{
     0%{
