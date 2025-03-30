@@ -505,6 +505,7 @@ footer{
     background-color: #3B7302;
     border-radius: 30px;
     cursor: pointer;
+    box-shadow: 0px 0px 8px rgb(72, 72, 72);
     animation: shake 2s;
 }
 .welcome-courses button:hover{
