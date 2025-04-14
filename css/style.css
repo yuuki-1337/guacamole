@@ -175,9 +175,8 @@ main{
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 30px;
-    margin-top: -35px;
     height: 100%;
+    padding: 0px 30px 30px 30px;
 }
 .banner-text p{
     font-size: 13px;
@@ -244,6 +243,8 @@ main{
 }
 .image-students{
     width: 250px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 20px;
 }
 .students-container{
@@ -628,7 +629,16 @@ footer{
 }
 .content-course{
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
     margin: 20px;
+}
+.content-course a{
+    text-decoration: none;
+    color: black;
+    margin-left: auto;
+    font-size: 1rem;
 }
 .recommended-banner ul{
     display: flex;
@@ -711,7 +721,7 @@ footer{
     justify-content: space-between;
 }
 .video-title button{
-    height: 40px;
+    max-height: 40px;
     color: white;
     background-color: blue;
     border: none;
@@ -722,6 +732,14 @@ footer{
     padding: 20px;
     cursor: pointer;
     border-radius: 20px;
+}
+.video-title button:hover{
+    filter: brightness(0.9);
+
+}
+.announcement-content button a{
+    text-decoration: none;
+    color: white;
 }
 .video-container iframe{
     width: 100%;
@@ -734,16 +752,36 @@ footer{
     flex-direction: column;
 }
 .aulas-container{
-    background-color: red;
     width: 90%;
 }
-.aulas-container div{
-    background-color: blue;
+.aulas-container button{
     width: 100%;
     height: 40px;
     align-items: center;
     display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    font-family: "Montserrat";
     margin-bottom: 5px;
+}
+.aulas-container button:hover{
+    filter: brightness(0.9);
+}
+.aulas-container label{
+    display: flex;
+    align-items: center;
+}
+.aulas-container input[type="checkbox"]{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    border: 2px solid #dfe1e5;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
 }
 .announcement{
     margin-top: 40px;
@@ -771,29 +809,37 @@ footer{
     justify-content: space-around;
 }
 .site{
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
 }
 .url-site{
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+    font-size: 9px;
+}
+.site img{
+    margin-right: 10px;
 }
 .announcement-content button{
     height: 30px;
     border: none;
     color: white;
+    cursor: pointer;
     border-radius: 20px;
     padding: 10px;
     align-items: center;
-    margin-right: 40px;
     display: flex;
     background-color: red;
 }
 .announcement-icon{
-    width: 20px;
-    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 30px;
 }
 .conteudo{
     display: flex;
@@ -803,6 +849,41 @@ footer{
     font-size: 1em;
     border-radius: 20px;
     margin-top: 20px;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    white-space: pre-line;
+    cursor: pointer;
+}
+.conteudo p{
+    margin-top: 0;
+}
+.conteudo:hover{
+    filter: brightness(0.9);
+}
+.conteudo.expandido{
+    max-height: 1000px;
+}
+.conteudo.expandido:hover{
+    filter: brightness(1);
+}
+.prof-container{
+    display: flex;
+    flex-direction: column;
+}
+.prof-perfil{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 30px;
+    padding: 20px;
+}
+.prof-perfil img{
+    width: 40px;
+    object-fit: cover;
+    object-position: center;
+    height: 40px;
+    border-radius: 40px;
 }
 .moreContent{
     justify-content: space-between;
@@ -811,10 +892,50 @@ footer{
 }
 .moreContent i{
     margin-right: 10px;
+    transition: transform 0.2s ease;
 }
-@media(max-width: 915px){
+.moreContent i.active{
+    transform: rotate(90deg);
+}
+.comentarios{
+    font-family: Arial, sans-serif;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.comentarios-container ul li{
+    display: flex;
+    align-items: center;
+}
+.comentarios-container ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+}
+@media(max-width: 975px){
     #textPrice{
         font-size: 20px;
+    }
+    #coursePrice{
+        font-size: 40px;
+    }
+    .announcement{
+        display: none;
+    }
+    .video{
+        width: 90%;
+    }
+    .aulas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 90%;
+    }
+    .sla{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (max-width: 768px){

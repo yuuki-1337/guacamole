@@ -78,6 +78,16 @@ function mudarSenha(){
     }
 }
 
+function expandirConteudo(elemento){
+    elemento.classList.toggle('expandido');
+    seta = document.getElementById('mostrarMais');
+    seta.classList.toggle('active');
+
+}
+
+function rolarParaBaixo(){
+    document.getElementById('cursos').scrollIntoView({behavior: "smooth"});
+}
 class Conteudo{
     constructor(title, video, titulo_video){
         this.title = title;

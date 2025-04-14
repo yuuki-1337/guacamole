@@ -71,13 +71,27 @@
                         <button>Proximo video</button>
                     </div>
                 </div>
-                <div class="conteudo">
+                <div class="conteudo" onclick="expandirConteudo(this)" id="conteudo">
                     <div class="moreContent">
                         <h3>Conteudo</h3>
-                        <i class="fa-solid fa-angle-right"></i></div>
+                        <i class="fa-solid fa-angle-right" id="mostrarMais"></i></div>
                     <div>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam debitis sint natus iusto dicta id praesentium voluptatum perspiciatis autem, eius error nulla porro hic ullam velit deleniti aperiam enim unde.</p>
+                        <p>Bem-vindo à sua primeira aula de programação com Python. Python é uma linguagem de programação muito usada no mundo todo, conhecida por ser simples, fácil de entender e muito poderosa. Ela foi criada por Guido van Rossum e lançada em 1991, com o objetivo de ser clara e direta, parecendo quase uma linguagem humana. Por isso, é ideal para quem está começando.</p>
+
+                        <p>Hoje, Python está presente em diversas áreas da tecnologia, como desenvolvimento de sites, inteligência artificial, análise de dados, automação de tarefas, criação de jogos e muito mais. Um dos principais motivos para aprender Python é a sua sintaxe simples. Isso significa que, diferente de outras linguagens que exigem muitos símbolos e regras complexas, o Python permite escrever códigos de forma mais limpa e natural. Além disso, o mercado de trabalho valoriza bastante essa linguagem, e há uma grande comunidade de programadores que compartilham conhecimentos, bibliotecas prontas e dicas.</p>
+                        <div class="prof-container">
+                            <div class="prof-perfil">
+                                <a href="https://marcellinus.dev/" target="_blank"><img src="../img/prof-image.png" alt=""></a>
+                                <p><strong>Allan Marcelino</strong><br><br>Professor na Rede Estadual Antonieta Borges Alves</p>
+                            </div>
+                            <h4>Formacao Academica</h4>
+                            <ul>
+                                <li>Bacharelado FIAP: HTML, CSS, JavaScript, React, Bootstrap, Python, Java, Swift, AWS</li>
+                                <li>Universidade Presbiteriana Mackenzie: Licenciatura, Matematica</li>
+                                <li>SENAI: Desenvolvimento de Sistemas</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -86,46 +100,67 @@
                     <img src="../img/ferrari_sf90.png" alt="" class="announcement-back">
                     <div class="announcement-content">
                         <div class="site">
-                            <img src="" alt="opa" class="announcement-icon">
+                            <img src="../img/ferrari_background.png" alt="opa" class="announcement-icon">
                             <div class="url-site">
-                                <p>Ferrari</p>
-                                <p class="nome">Patrocinado</p>
+                                <p>Ferrari <br><br><strong>Patrocinado</strong> · yuuki-1337.github.io/yuuki-1337</p>
                             </div>
                         </div>
-                        <button>Saiba mais</button>
+                        <button><a href="https://yuuki-1337.github.io/yuuki-1337" target="_blank">Saiba mais
+                        </a></button>
                     </div>
                 </aside>
                 <div class="aulas-container">
-                    <div>
+                    <h3>Aulas (curso)</h3>
+                    <button>
                         <label><input type="checkbox">Aula 1</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 2</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 3</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 4</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 5</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 6</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 7</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 8</label>
-                    </div>
-                    <div>
+                    </button>
+                    <button>
                         <label><input type="checkbox">Aula 9</label>
-                    </div>
+                    </button>
                 </div>
             </section>
         </div>
+        <section class="comentarios">
+            <h2>Comentarios</h2>
+            <div class="comentarios-container">
+                <ul>
+                    <li>
+                        <img src="" alt="opa">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia numquam ipsum mollitia earum reiciendis aliquid aspernatur deleniti quas. Excepturi minus temporibus explicabo repudiandae aut, omnis magni debitis praesentium non.</p>
+                            <div class="feedback">
+                                <button><i class="fa-regular fa-thumbs-up"></i></button>
+                                <button><i class="fa-regular fa-thumbs-down"></i></button>
+                                <button><i class="fa-regular fa-heart"></i></button>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
     </main>
     <footer>
         <section class="footerSection">
@@ -159,5 +194,6 @@
             </div>
         </section>
     </footer>
+    <script src="../script/script.js"></script>
 </body>
 </html>
