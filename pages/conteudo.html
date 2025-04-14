@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="sideBar" id="menuLateral">
+            <div class="top-sideBar">
+                <button id="menu-toggle" onclick="abrirMenu()">
+                    <img src="../img/sideBar-image.png" alt="">
+                </button>
+                <div id="lupa">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                </div>
+            </div>
+            <div class="sideContent">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/cursos.html">Cursos</a></li>
+                    <li><a href="../pages/certificados.html">Certificados</a></li>
+                    <li><a href="../pages/configuracoes.html">Configurações</a></li>
+                    <li><a href="../pages/login.html">Conta</a></li>
+                </ul>
+            </div>
+            <div class="logout">
+                <a  href="#" id="logout active">Sair da conta</a>
+            </div>
+        </nav>
+        <nav class="top-part">
+            <div>
+                <a href=""><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
+            </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/cursos.html">Cursos</a></li>
+                <li><a href="../pages/certificados.html">Certificados</a></li>
+            </ul>
+            <div id="lupa">
+                <i class="fa-solid fa-magnifying-glass">
+                </i>
+            </div>
+            <div id="user">
+                <a href="../pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"></a>
+            </div>
+        </nav>
+        <nav class="menu-mobile" id="menuMobile">
+            <button id="menu-toggle" onclick="abrirMenu()">
+                <img src="../img/sideBar-image.png" alt="">
+            </button>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo-image.png" alt="logo" class="logo-image"></a>
+            </div>
+            <div id="user">
+                <a href="../pages/login.html"><img src="../img/user-image.png" alt="user" id="user-image"><a href=""></a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-conteudo">
+        <div class="sla">
+            <section class="video">
+                <div class="video-container">
+                    <iframe src="https://www.youtube-nocookie.com/embed/S9uPNppGsGo?si=OAauzmp6mDvc5P7L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-title">
+                        <h2>Aula 1: Aprendendo o basico</h2>
+                        <button>Proximo video</button>
+                    </div>
+                </div>
+                <div class="conteudo">
+                    <div class="moreContent">
+                        <h3>Conteudo</h3>
+                        <i class="fa-solid fa-angle-right"></i></div>
+                    <div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam debitis sint natus iusto dicta id praesentium voluptatum perspiciatis autem, eius error nulla porro hic ullam velit deleniti aperiam enim unde.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="aulas">
+                <aside class="announcement">
+                    <img src="../img/ferrari_sf90.png" alt="" class="announcement-back">
+                    <div class="announcement-content">
+                        <div class="site">
+                            <img src="" alt="opa" class="announcement-icon">
+                            <div class="url-site">
+                                <p>Ferrari</p>
+                                <p class="nome">Patrocinado</p>
+                            </div>
+                        </div>
+                        <button>Saiba mais</button>
+                    </div>
+                </aside>
+                <div class="aulas-container">
+                    <div>
+                        <label><input type="checkbox">Aula 1</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 2</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 3</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 4</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 5</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 6</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 7</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 8</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox">Aula 9</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="footerSection">
+            <div class="footerContent">
+                <h6>Sobre</h6>
+                <ul>
+                    <li><a href="">Quem somos</a></li>
+                    <li><a href="">Carreiras</a></li>
+                    <li><a href="">Fale conosco</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h6>Redes</h6>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i>@guacamole_academy</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>@Guacamole_academy</a></li>
+                    <li><a href=""><i class="fa-solid fa-x"></i>@Guacamole_academy</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="guacamoleFinish">
+            <div class="footer-logo">
+                <img src="../img/guacamole-logo-removebg-preview.png" alt="rapaz">
+            </div>
+            <div class="footer-informations">
+                <a href="">©2025 Guacamole, Inc.</a>
+                <a href="">Configurações de Cookie</a>
+                <a href="">Termos</a>
+                <button id="translater"><i class="fa-solid fa-globe"></i>Português</button>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

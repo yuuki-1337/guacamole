@@ -17,7 +17,7 @@ header{
     color: black;
     background-color: #FDFFE9;
     width: 100%;
-    height: 55px;
+    height: 10vh;
     padding: 10px;
     border-bottom: 1px solid rgb(172, 172, 172);
     position: fixed;
@@ -97,7 +97,7 @@ main{
 .home-prices{
     background-color: #3B7302;
     display: flex;
-    height: calc(100vh);
+    height: calc(100vh - 8vh);
     width: 100%;
     padding-top: 50px;
     font-family: "Poppins", "sans-serif";
@@ -534,6 +534,10 @@ footer{
     font-family: "Poppins" sans-serif;
     padding: 30px;
 }
+.courses-button a{
+    text-decoration: none;
+    color: black;
+}
 .courses-button button{
     background-color: #F2D98D;
     border: none;
@@ -682,6 +686,131 @@ footer{
     100%{
         transform: translateY(8px);
     }
+}
+/* main-conteudo */
+.main-conteudo{
+    display: flex;
+    font-family: "Montserrat";
+    width: 100%;
+    margin-top: 10vh;
+}
+.sla{
+    display: flex;
+}
+.video {
+    width: 60%;
+    padding: 20px;
+    margin: 20px;
+
+}
+.video-title{
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.video-title button{
+    height: 40px;
+    color: white;
+    background-color: blue;
+    border: none;
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.video-container iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+.aulas{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.aulas-container{
+    background-color: red;
+    width: 90%;
+}
+.aulas-container div{
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+.announcement{
+    margin-top: 40px;
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.announcement-back{
+    width: 90%;
+    border-radius: 10px 10px 0px 0px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+.announcement-content{
+    width: 90%;
+    background-color: #f4f4f4;
+    height: 70px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: space-around;
+}
+.site{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.url-site{
+    display: flex;
+    flex-direction: column;
+    
+}
+.announcement-content button{
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    margin-right: 40px;
+    display: flex;
+    background-color: red;
+}
+.announcement-icon{
+    width: 20px;
+    border-radius: 20px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.moreContent{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.moreContent i{
+    margin-right: 10px;
 }
 @media(max-width: 915px){
     #textPrice{

@@ -77,3 +77,13 @@ function mudarSenha(){
 
     }
 }
+
+class Conteudo{
+    constructor(title, video, titulo_video){
+        this.title = title;
+        this.video = video;
+        this.titulo_video = titulo_video;
+    }
+
+    
+}
