@@ -88,6 +88,21 @@ function expandirConteudo(elemento){
 function rolarParaBaixo(){
     document.getElementById('cursos').scrollIntoView({behavior: "smooth"});
 }
+function borderAnimation() {
+    const borda = document.getElementById('borderComment');
+    borda.classList.toggle('active');
+  
+    const handleClickOutside = function(event) {
+      if (!borda.contains(event.target)) {
+        borda.classList.remove('active');
+        document.removeEventListener('click', handleClickOutside);
+      }
+    };
+  
+    setTimeout(() => {
+      document.addEventListener('click', handleClickOutside);
+    }, 0); // impede conflito com o clique atual
+  }
 class Conteudo{
     constructor(title, video, titulo_video){
         this.title = title;
