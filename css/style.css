@@ -719,19 +719,20 @@ footer{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .video-title button{
-    max-height: 40px;
+    height: 40px;
     color: white;
     background-color: blue;
     border: none;
     display: flex;
-    font-family: Arial, sans-serif;
+    font-family: poppins;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 25px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 .video-title button:hover{
     filter: brightness(0.9);
@@ -748,6 +749,7 @@ footer{
 }
 .aulas{
     width: 40%;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
@@ -784,6 +786,7 @@ footer{
     position: relative;
 }
 .announcement{
+    align-items: center;
     margin-top: 40px;
     width: 100%;
     font-size: 13px;
@@ -862,7 +865,7 @@ footer{
     filter: brightness(0.9);
 }
 .conteudo.expandido{
-    max-height: 1000px;
+    max-height: 1300px;
 }
 .conteudo.expandido:hover{
     filter: brightness(1);
@@ -907,11 +910,39 @@ footer{
 .comentarios-container ul li{
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+.comentario{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .comentarios-container ul li img{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 40px;
+}
+.feedback{
+    display: flex;
+    gap: 10px;
+}
+.feedback button{
+    border: none;
+    font-size: 25px;
+    background-color: #FDFFE9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+}
+.feedback button:hover{
+    filter: brightness(0.9);
 }
 @media(max-width: 975px){
     #textPrice{
@@ -921,21 +952,32 @@ footer{
         font-size: 40px;
     }
     .announcement{
-        display: none;
+        margin: 0;
     }
     .video{
         width: 90%;
+    }
+    .video-container iframe{
+        height: 200px;
     }
     .aulas{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
-        width: 90%;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .sla{
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
+    }
+    .video-title{
+        font-size: 12px;
     }
 }
 @media (max-width: 768px){
@@ -1086,6 +1128,15 @@ footer{
     }
     .guaca-banner{
         margin: -150px 5% 0px 5%;
+    }
+    .footerContent{
+        font-size: 12px;
+    }
+    .footer-logo img{
+        max-width: 100px;
+    }
+    .footer-informations{
+        font-size: 6px;
     }
 }
 @media(max-width: 355px){
